@@ -1,0 +1,2 @@
+Moved requirements.txt to src dir so they get installed before running pyinstaller.
+Added colorama to requirements to address tqdm issues.
