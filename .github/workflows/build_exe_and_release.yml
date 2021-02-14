@@ -22,7 +22,7 @@ jobs:
           python -m pip install pyinstaller
           python -m pip install -r requirements.txt
       - name: Build EXE
-        run: pyinstaller --onefile list_classes_in_jars.py
+        run: pyinstaller --onefile --icon=Lana.ico list_classes_in_jars.py
       - name: Move Executable
         run: move dist/list_classes_in_jars.exe LANA.exe
       - name: Create Release
